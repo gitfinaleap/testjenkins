@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Deploy to Remote'){
             steps{
-                sh 'cp -r ${WORKSPACE}/* root@${staging_server}:/var/www/html/test/'
+                sh 'cp -r ${WORKSPACE}/* root@${staging_server}:/var/www/finaleap.in/test/'
             }
         }
     }
